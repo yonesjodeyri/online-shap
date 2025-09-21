@@ -7,3 +7,8 @@ app = Blueprint("general", __name__)
 def home():
     return "Hello from general blueprint!"
 
+
+@app.route("/about")
+def about():
+    return "this is about home!"
+
